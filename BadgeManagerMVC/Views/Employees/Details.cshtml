@@ -1,0 +1,103 @@
+﻿@model BadgeManagerMVC.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h3>Details</h3>
+
+<div>    
+    <hr />
+    <div class="row">
+        <div class="col-md-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.EmployeeNumber)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EmployeeNumber)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.HireDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.HireDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TerminationDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TerminationDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Type)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Type)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Status)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Status)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Shift)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Shift)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Department)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Department)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>        
+            </dl>
+        </div>
+        <div class="col-m-2">
+            <img src="~/Content/EmployeeImages/@(string.Format("{0}, {1}.jpg", Model.LastName, Model.FirstName))" alt="~/Content/EmployeeImages/BlankProfile.jpg" width="100">
+        </div>
+    </div>
+</div>
+<p>
+    <input type="button" class="btn btn-primary" value="Edit" onclick="location.href='@Url.Action("Edit", "Employees", new { id = Model.EmployeeGuid })'" />    
+    <input type="button" class="btn btn-default" value="Back to List" onclick="location.href='@Url.Action("Index", "Employees")'" />
+</p>
