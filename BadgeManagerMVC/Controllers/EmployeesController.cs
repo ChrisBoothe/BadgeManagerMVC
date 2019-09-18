@@ -35,6 +35,20 @@ namespace BadgeManagerMVC.Controllers
             return View(employee);
         }
 
+        public ActionResult Print(Guid? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Employee employee = db.Employees.Find(id);
+            if (employee == null)
+            {
+                return HttpNotFound();
+            }
+            return View(employee);
+        }
+
         // GET: Employees/Create
         public ActionResult Create()
         {

@@ -103,7 +103,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\EmployeeImages\BlankProfile.jpg" />
     <Content Include="Content\EmployeeImages\Boothe, Christopher.jpg" />
+    <Content Include="Content\EmployeeImages\Burch, Chris.jpg" />
     <Content Include="Content\Images\EKNA icon.png" />
+    <Content Include="Content\Images\EKNA Vertical Badge%2896dpi%29.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -145,6 +147,7 @@
     <Compile Include="Models\Employee.cs">
       <DependentUpon>EmployeeEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeDepartment.cs" />
     <Compile Include="Models\EmployeeEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -160,6 +163,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeShift.cs" />
+    <Compile Include="Models\EmployeeStatus.cs" />
+    <Compile Include="Models\EmployeeType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +187,7 @@
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Views\Employees\Print.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

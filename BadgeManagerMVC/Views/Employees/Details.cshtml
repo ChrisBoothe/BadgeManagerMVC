@@ -93,11 +93,12 @@
             </dl>
         </div>
         <div class="col-m-2">
-            <img src="~/Content/EmployeeImages/@(string.Format("{0}, {1}.jpg", Model.LastName, Model.FirstName))" alt="~/Content/EmployeeImages/BlankProfile.jpg" width="100">
+            <img src="~/Content/EmployeeImages/@(string.Format("{0}, {1}.jpg", Model.LastName, Model.FirstName))" width="125">
         </div>
     </div>
 </div>
 <p>
-    <input type="button" class="btn btn-primary" value="Edit" onclick="location.href='@Url.Action("Edit", "Employees", new { id = Model.EmployeeGuid })'" />    
+    <input type="button" class="btn btn-primary" value="Edit" onclick="location.href='@Url.Action("Edit", "Employees", new { id = Model.EmployeeGuid })'" />
+    <input type="button" class="btn btn-primary" value="Print" onclick="location.href='@Url.Action("Print", "Employees", new { id = Model.EmployeeGuid })'" />
     <input type="button" class="btn btn-default" value="Back to List" onclick="location.href='@Url.Action("Index", "Employees")'" />
 </p>
