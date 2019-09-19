@@ -58,7 +58,8 @@ namespace BadgeManagerMVC.Controllers
         // POST: Employees/Create        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EmployeeGuid,EmployeeNumber,FirstName,LastName,HireDate,TerminationDate,Type,Status,Shift,Department,Title")] Employee employee)
+        public ActionResult Create([Bind(Include = "EmployeeGuid,EmployeeNumber,FirstName,LastName,HireDate," +
+            "TerminationDate,Type,Status,Shift,Department,Title")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -86,12 +87,11 @@ namespace BadgeManagerMVC.Controllers
             return View(employee);
         }
 
-        // POST: Employees/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Employees/Edit/5        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EmployeeGuid,EmployeeNumber,FirstName,LastName,HireDate,TerminationDate,Type,Status,Shift,Department,Title")] Employee employee)
+        public ActionResult Edit([Bind(Include = "EmployeeGuid,EmployeeNumber,FirstName,LastName,HireDate," +
+            "TerminationDate,Type,Status,Shift,Department,Title")] Employee employee)
         {
             if (ModelState.IsValid)
             {
