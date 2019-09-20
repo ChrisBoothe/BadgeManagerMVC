@@ -35,6 +35,7 @@ namespace BadgeManagerMVC.Controllers
             return View(employee);
         }
 
+        // GET: Employees/Print/5
         public ActionResult Print(Guid? id)
         {
             if (id == null)

@@ -4,72 +4,22 @@
     Layout = null;
 }
 
-<style>
-    .badgeBackground {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 204px;
-        height: 324px;
-    }
+<link href="~/Content/Print.css" rel="stylesheet" type="text/css" />
 
-    .employeeImage {
-        position: absolute;
-        top: 63px;
-        left: 52px;
-        border: 1px solid black;
-        width: 135px;
-    }
-
-    .employeeFirstName {
-        position: absolute;
-        top: 207px;
-        right: 17px;
-        font: bold 23px arial;
-    }
-
-    .employeeLastName {
-        position: absolute;
-        top: 234px;
-        right: 17px;
-        font: bold 23px arial;
-    }
-
-    .dateOfHire {
-        position: absolute;
-        top: 278px;
-        right: 17px;
-        font: bold 11px arial;
-    }
-
-    .employeeId {
-        position: absolute;
-        top: 278px;
-        right: 149px;
-        font: bold 11px arial;
-    }
-
-    .barcode {
-        position: absolute;
-        top: 126px;
-        right: 103px;
-        font-family: Code39AzaleaRegular3;
-        font-size: 28px;
-        transform: rotate(90deg)
-    }
-</style>
-
-<div style="position: relative; left: 0; top: 0;">
+<body>
     <div class="badgeBackground">
         <img src="~/Content/Images/EKNA Vertical Badge(96dpi).jpg" />
         <img src="~/Content/EmployeeImages/@(string.Format("{0}, {1}.jpg", Model.LastName, Model.FirstName))" class="employeeImage" />
         <div class="employeeFirstName">@Model.FirstName</div>
         <div class="employeeLastName">@Model.LastName</div>
-        <div class="dateOfHire">DOH @Model.HireDate.ToShortDateString()</div>
+        <div class="dateOfHire">@Model.HireDate.ToShortDateString()</div>
         <div class="employeeId">EMP@(Model.EmployeeNumber)</div>
         <div class="barcode">*EMP@(Model.EmployeeNumber)*</div>
     </div>
-</div>
+    <button type="button">Print Badge</button>
+</body>
+
+
 
 
 

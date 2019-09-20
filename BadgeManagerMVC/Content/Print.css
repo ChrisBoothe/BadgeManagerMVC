@@ -1,0 +1,67 @@
+﻿body {
+    position: relative;
+    left: 0;
+    top: 0;    
+    margin: 0
+}
+
+.badgeBackground {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 204px;
+    height: 324px;
+}
+
+.employeeImage {
+    position: absolute;
+    top: 60px;
+    left: 48px;
+    border: 1px solid black;
+    width: 145px;
+}
+
+.employeeFirstName {
+    position: absolute;
+    top: 214px;
+    right: 10px;
+    font: bold 23px arial;
+}
+
+.employeeLastName {
+    position: absolute;
+    top: 241px;
+    right: 10px;
+    font: bold 23px arial;
+}
+
+.dateOfHire {
+    position: absolute;
+    top: 276px;
+    right: 10px;
+    font: bold 11px arial;
+}
+
+.employeeId {
+    position: absolute;
+    top: 276px;
+    right: 154px;
+    font: bold 11px arial;
+}
+
+.barcode {
+    position: absolute;
+    top: 128px;
+    right: 97px;
+    font-family: Code39AzaleaRegular3;
+    font-size: 30px;
+    transform: rotate(90deg)
+}
+
+button {
+    position: relative;
+    top: 15px;
+    left: 60px;    
+}
+
+
