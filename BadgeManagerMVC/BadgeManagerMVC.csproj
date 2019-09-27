@@ -111,16 +111,6 @@
     <Content Include="Content\Print.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\EmployeeEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EmployeeEntities.Context.cs</LastGenOutput>
-      <DependentUpon>EmployeeEntities.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\EmployeeEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmployeeEntities.edmx</DependentUpon>
-      <LastGenOutput>EmployeeEntities.cs</LastGenOutput>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -146,25 +136,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Employee.cs">
-      <DependentUpon>EmployeeEntities.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeDepartment.cs" />
-    <Compile Include="Models\EmployeeEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmployeeEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmployeeEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeEntities.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\EmployeesEntities.cs" />
     <Compile Include="Models\EmployeeShift.cs" />
     <Compile Include="Models\EmployeeStatus.cs" />
     <Compile Include="Models\EmployeeType.cs" />
@@ -172,13 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\EmployeeEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmployeeEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\EmployeeEntities.edmx.diagram">
-      <DependentUpon>EmployeeEntities.edmx</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

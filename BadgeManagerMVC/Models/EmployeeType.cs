@@ -7,7 +7,7 @@ namespace BadgeManagerMVC.Models
 {
     public enum EmployeeType
     {
-        Salary,        
-        Hourly
+        Salary = 1,        
+        Hourly = 2
     }
 }
