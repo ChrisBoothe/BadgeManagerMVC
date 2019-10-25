@@ -10,9 +10,14 @@ using BadgeManagerMVC.Models;
 
 namespace BadgeManagerMVC.Controllers
 {
-    public class EmployeesController : Controller
+    public class HomeController : Controller
     {
         private EmployeesEntities db = new EmployeesEntities();
+
+        /*public HomeController(EmployeesEntities db)
+        {
+            this.db = db;
+        }*/
 
         // GET: Employees
         public ActionResult Index()

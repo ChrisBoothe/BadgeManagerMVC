@@ -1,21 +1,19 @@
 ﻿@model BadgeManagerMVC.Models.Employee
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Create";
 }
 
-<h3>Edit Employee</h3>
+<h3>Create New Employee</h3>
 
 
-@using (Html.BeginForm())
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">        
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.EmployeeGuid)
-
         <div class="form-group">
             @Html.LabelFor(model => model.EmployeeNumber, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -98,12 +96,13 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-success" />
-                <input type="button" class="btn btn-default" value="Cancel" onclick="location.href='@Url.Action("Index", "Employees")'" />
+                <input type="submit" value="Create" class="btn btn-success" />
+                <input type="button" class="btn btn-default" value="Cancel" onclick="location.href='@Url.Action("Index", "Home")'" />
             </div>
         </div>
     </div>
  }
+
 
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>
