@@ -101,7 +101,6 @@
       <DependentUpon>Employees.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\EmployeeImages\BlankProfile.jpg" />
     <Content Include="Content\EmployeeImages\Boothe, Christopher.jpg" />
     <Content Include="Content\EmployeeImages\Burch, Chris.jpg" />
     <Content Include="Content\EmployeeImages\Solo, Han.jpg" />

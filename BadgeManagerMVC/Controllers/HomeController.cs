@@ -14,15 +14,10 @@ namespace BadgeManagerMVC.Controllers
     {
         private EmployeesEntities db = new EmployeesEntities();
 
-        /*public HomeController(EmployeesEntities db)
-        {
-            this.db = db;
-        }*/
-
         // GET: Employees
-        public ActionResult Index()
+        public ActionResult Index(string search)
         {
-            return View(db.Employees.ToList());
+            return View(db.Employees.Where(x => x.LastName.StartsWith(search) || x.FirstName.StartsWith(search) || search == null).ToList());
         }
 
         // GET: Employees/Details/5

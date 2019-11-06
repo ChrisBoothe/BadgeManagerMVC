@@ -15,8 +15,8 @@
         <div class="dateOfHire">@Model.HireDate.ToShortDateString()</div>
         <div class="employeeId">EMP@(Model.EmployeeNumber)</div>
         <div class="barcode">*EMP@(Model.EmployeeNumber)*</div>
-    </div>
-    <button type="button">Print Badge</button>
+    </div>    
+    <button type="button" onclick="javascript:window.print()">Print Badge</button>
 </body>
 
 
