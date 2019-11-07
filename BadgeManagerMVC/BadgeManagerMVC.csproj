@@ -103,7 +103,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\EmployeeImages\Boothe, Christopher.jpg" />
     <Content Include="Content\EmployeeImages\Burch, Chris.jpg" />
+    <Content Include="Content\EmployeeImages\Skywalker, Luke.jpg" />
     <Content Include="Content\EmployeeImages\Solo, Han.jpg" />
+    <Content Include="Content\EmployeeImages\Vandelay, Art.jpg" />
     <Content Include="Content\Images\EKNA icon.png" />
     <Content Include="Content\Images\EKNA Vertical Badge%2896dpi%29.jpg" />
     <Content Include="Content\Site.css" />
